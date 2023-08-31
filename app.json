@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "BreathingApp",
+    "slug": "BreathingApp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
