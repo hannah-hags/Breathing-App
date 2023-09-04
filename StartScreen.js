@@ -3,7 +3,7 @@ import {StyleSheet, Text, View, Button, ImageBackground, TouchableOpacity} from 
 
 const image = {uri: 'https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701316882.jpg'};
 
-const StartScreen = () => {
+const StartScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <ImageBackground source={image} resizeMode="cover" style={styles.image}>
@@ -11,7 +11,7 @@ const StartScreen = () => {
       <Text style={styles.subtitle}>Push the Button Below to Begin</Text>
       <TouchableOpacity
         style={styles.button}
-        onPress={() => Alert.alert("Simple Button pressed")}
+        onPress={() => navigation.navigate("Selection")}
         >
         <Text>Begin</Text>
       </TouchableOpacity>
@@ -31,25 +31,25 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    color: 'white',
+    color: 'floralwhite',
     fontWeight: 'bold',
     fontSize: 50,
     textAlign: 'center',
     marginTop:20,
   },
   subtitle: {
-    color: 'white',
+    color: 'floralwhite',
     fontSize: 30,
     textAlign: 'center',
     marginTop: 20,
   },
   button: {
     alignItems: 'center',
-    backgroundColor: 'white',
+    backgroundColor: 'floralwhite',
     height: 50,
     width: 200,
     fontSize: 30,
-    marginTop: 20,
+    marginTop: 40,
     justifyContent: 'center',
     alignSelf: 'center',
   },
@@ -65,3 +65,4 @@ export default StartScreen;
 //  https://reactnative.dev/docs/colors
 //  https://reactnative.dev/docs/button
 //  https://reactnative.dev/docs/imagebackground
+//  https://www.makeuseof.com/react-native-navigate-between-screens/
