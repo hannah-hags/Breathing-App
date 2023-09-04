@@ -2,9 +2,14 @@
 
 App containing a walkthrough of basic breathing exercises. This is a class project for CS 4261 and is soley being used as a way to practice app development skills. For this, I chose to develop using javascript with ReactNative and Expo. Project is exclusively worked on by hannah-hags.
 
-App.js currently contains the first breathing exercise 
+## Components
+App.js contains navigation features connecting the three other files
 
-Branch startscreen-edits contains in progress code for the start screen that has not been integrated with the rest of the app yet.
+StartScreen.js contains code and details for the first screen that appears when the app is opened. Pressing the Begin button navigates to SelectionScreen.js
+
+SelectionScreen.js contains buttons leading to all offered breathing exercises. Only one is currently available.
+
+breathingExercise1.js walks the user through a basic 4-7-8 breathing exercise once the Begin button has been pressed.
 
 ## Contributing
 
