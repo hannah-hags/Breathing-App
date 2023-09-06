@@ -2,8 +2,9 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import StartScreen from './StartScreen';
-import breathingExercise1 from './breathingExercise1';
-import SelectionScreen from '/SelectionScreen';
+import BreathingExercise1 from './BreathingExercise1';
+import BreathingExercise2 from './BreathingExercise2';
+import SelectionScreen from './SelectionScreen';
 
 const Stack = createNativeStackNavigator()
 
@@ -20,8 +21,12 @@ const App = () => {
           component={SelectionScreen}
         />
         <Stack.Screen 
-          name="breathing1" 
-          component={breathingExercise1} 
+          name="Breathing1" 
+          component={BreathingExercise1} 
+        />
+        <Stack.Screen 
+          name="Breathing2" 
+          component={BreathingExercise2} 
         />
       </Stack.Navigator>
     </NavigationContainer>

@@ -9,10 +9,17 @@ const StartScreen = ({navigation}) => {
       <ImageBackground source={image} resizeMode="cover" style={styles.image}>
       <Text style={styles.title}>Select Exercise</Text>
       <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate("breathing1")}
+        style={styles.button1}
+        onPress={() => navigation.navigate("Breathing1")}
         >
-        <Text>4-7-8 Breathing</Text>
+        <Text style={{fontSize: 25, fontWeight: 'bold', color: 'navy'}}>4-7-8 Breathing</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.button2}
+        onPress={() => navigation.navigate("Breathing2")}
+        >
+        <Text style={{fontSize: 25, fontWeight: 'bold', color: 'navy'}}>Box Breathing</Text>
       </TouchableOpacity>
       </ImageBackground>
     </View>
@@ -34,15 +41,25 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 50,
     textAlign: 'center',
-    marginTop:20,
   },
-  button: {
+  button1: {
     alignItems: 'center',
     backgroundColor: 'floralwhite',
-    height: 50,
-    width: 200,
+    height: 75,
+    width: 300,
     fontSize: 30,
-    marginTop: 40,
+    marginTop: 50,
+    justifyContent: 'center',
+    alignSelf: 'center',
+  },
+  button2: {
+    alignItems: 'center',
+    backgroundColor: 'floralwhite',
+    height: 75,
+    width: 300,
+    fontSize: 30,
+    marginTop: 50,
+    marginBottom:75,
     justifyContent: 'center',
     alignSelf: 'center',
   },
@@ -53,3 +70,4 @@ export default StartScreen;
 
 
 //  SOURCES
+//  https://www.verywellmind.com/abdominal-breathing-2584115
