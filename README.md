@@ -17,3 +17,21 @@ breathingExercise1.js walks the user through a basic 4-7-8 breathing exercise on
 
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
+
+
+## Sources
+https://www.makeuseof.com/react-native-navigate-between-screens/
+
+https://feralcat.xyz/blog/2020/07/03/vertically-and-horizontally-center-text-in-react-native/
+
+https://reactnative.dev/docs/style
+
+https://reactnative.dev/docs/handling-touches
+
+https://reactnative.dev/docs/colors
+
+https://reactnative.dev/docs/button
+
+https://reactnative.dev/docs/imagebackground
+
+https://www.verywellmind.com/abdominal-breathing-2584115
