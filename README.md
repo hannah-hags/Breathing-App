@@ -1,6 +1,8 @@
 # Breathing-App
 
-App containing a walkthrough of basic breathing exercises. This is a class project for CS 4261 and is soley being used as a way to practice app development skills. For this, I chose to develop using javascript with ReactNative and Expo. Project is exclusively worked on by hannah-hags.
+App containing a walkthrough of basic breathing exercises. This is a class project for CS 4261 and is soley being used as a way to practice app development skills. For this, I chose to develop using javascript with ReactNative and Expo. The app can be viewed on a mobile phone using the Expo Go app. 
+
+Project is exclusively worked on by hannah-hags.
 
 ## Components
 App.js contains navigation features connecting the three other files
