@@ -9,6 +9,10 @@ import SignInPage from './SignInPage';
 import SignUpPage from './SignUpPage';
 import ConfirmationPage from './ConfirmationPage';
 
+import { Amplify } from 'aws-amplify';
+import awsExports from './src/aws-exports';
+Amplify.configure(awsExports);
+
 const Stack = createNativeStackNavigator()
 
 const App = () => {
