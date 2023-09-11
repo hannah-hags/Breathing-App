@@ -11,9 +11,10 @@ import {
 } from "react-native";
 import { Auth } from 'aws-amplify';
 
-async function signIn(username, password) {
+async function signIn(username, password, {navigation}) {
   try {
-    const user = await Auth.signIn(username, password);
+    await Auth.signIn(username, password);
+    navigation.navigate("Selection")
   } catch (error) {
     console.log('error signing in', error);
   }
@@ -50,7 +51,7 @@ export default function SignUpPage({navigation}) {
       </TouchableOpacity> 
       <TouchableOpacity
         style={styles.button}
-        onPress={() => signIn(username, password)}
+        onPress={() => signIn(username, password, {navigation})}
         >
         <Text>Sign In</Text>
       </TouchableOpacity>  
