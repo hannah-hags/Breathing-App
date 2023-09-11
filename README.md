@@ -26,6 +26,21 @@ This project uses AWS Amplify for all backend and authentication functions. In o
 
 https://docs.amplify.aws/lib/auth/getting-started/q/platform/react-native/
 
+## Running the App on Personal Device
+To Run As Admin:
+1. Download code from repository and load in React Native Environment.
+2. Download and install ExpoGo app on iPhone or Android Phone.
+3. Install Expo and AWS Amplify packages with React Native following _____ documentation.
+4. Open terminal and naviagate to BreathingApp folder.
+5. Type expo start in terminal to load app.
+6. Follow instructions to load app on phone or on web.
+7. Have Fun!
+
+To Run as User:
+1. Download ExpoGo app on iPhone or Android Phone.
+2. Scan the QR code provided by admin running code.
+3. Have Fun!
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
