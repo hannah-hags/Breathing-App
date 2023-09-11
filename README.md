@@ -9,7 +9,7 @@ App.js contains navigation features connecting the three other files
 
 StartScreen.js contains code and details for the first screen that appears when the app is opened. Pressing the Begin button navigates to SelectionScreen.js
 
-SignInPage.js asks the user to input their username and passowrd before clicking Sign In to continue into the app. Clicking Sign In takes them to the Selection Screen (not yet funcitonal). New users are given the option to Sign Up, which takes them to the Sign Up page. This functionality uses AWS Amplify to compare to the user list and allow logins.
+SignInPage.js asks the user to input their username and passowrd before clicking Sign In to continue into the app. Clicking Sign In takes them to the Selection Screen. New users are given the option to Sign Up, which takes them to the Sign Up page. This functionality uses AWS Amplify to compare to the user list and allow logins.
 
 SignUpPage.js asks the user to provide their email, as well as choose a username and password. Upon clicking Sign Up, they will be led to an account confirmation page and a confirmation email containing a code will be sent to them. This functionality uses AWS Amplify to add them to the user list as an "Unconfirmed" user. 
 
