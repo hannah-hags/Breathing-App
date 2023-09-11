@@ -19,7 +19,7 @@ SelectionScreen.js contains buttons leading to all offered breathing exercises. 
 
 BreathingExercise1.js walks the user through a basic 4-7-8 breathing exercise once the Begin button has been pressed.
 
-BreathingExercise2.js walks the user through a box breathing exercise once the Begin button has been pressed (not yet functional).
+BreathingExercise2.js walks the user through a box breathing exercise (4 seconds each side of the box) once the Begin button has been pressed.
 
 ## Expo
 Expo is used to create an environment from which the app can run on the web, ios, or andriod. In order to use on your phone, download the ExpoGo App and follow instructions in the following guides:
