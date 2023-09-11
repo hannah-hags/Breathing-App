@@ -100,5 +100,4 @@ export default function BreathingExercise1() {
 
 
 //  SOURCES:
-//  https://www.makeuseof.com/react-native-navigate-between-screens/
-//  https://feralcat.xyz/blog/2020/07/03/vertically-and-horizontally-center-text-in-react-native/ --> styling text
+//  https://www.makeuseof.com/react-native-navigate-between-screens/ --> styling text

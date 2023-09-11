@@ -5,6 +5,9 @@ import StartScreen from './StartScreen';
 import BreathingExercise1 from './BreathingExercise1';
 import BreathingExercise2 from './BreathingExercise2';
 import SelectionScreen from './SelectionScreen';
+import SignInPage from './SignInPage';
+import SignUpPage from './SignUpPage';
+import ConfirmationPage from './ConfirmationPage';
 
 const Stack = createNativeStackNavigator()
 
@@ -15,6 +18,18 @@ const App = () => {
         <Stack.Screen
           name="Start"
           component={StartScreen}
+        />
+        <Stack.Screen
+          name="SignIn"
+          component={SignInPage}
+        />
+        <Stack.Screen
+          name="SignUp"
+          component={SignUpPage}
+        />
+        <Stack.Screen
+          name="Confirmation"
+          component={ConfirmationPage}
         />
         <Stack.Screen
           name="Selection"
@@ -37,3 +52,4 @@ export default App;
 
 //  SOURCES:
 //  https://www.makeuseof.com/react-native-navigate-between-screens/
+//  entry point in app.json was found online 

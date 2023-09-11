@@ -11,7 +11,7 @@ const StartScreen = ({navigation}) => {
       <Text style={styles.subtitle}>Push the Button Below to Begin</Text>
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate("Selection")}
+        onPress={() => navigation.navigate("SignIn")}
         >
         <Text>Begin</Text>
       </TouchableOpacity>
