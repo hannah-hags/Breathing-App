@@ -9,9 +9,22 @@ App.js contains navigation features connecting the three other files
 
 StartScreen.js contains code and details for the first screen that appears when the app is opened. Pressing the Begin button navigates to SelectionScreen.js
 
+SignInPage.js asks the user to input their username and passowrd before clicking Sign In to continue into the app. Clicking Sign In takes them to the Selection Screen (not yet funcitonal). New users are given the option to Sign Up, which takes them to the Sign Up page. This functionality uses AWS Amplify to compare to the user list and allow logins.
+
+SignUpPage.js asks the user to provide their email, as well as choose a username and password. Upon clicking Sign Up, they will be led to an account confirmation page and a confirmation email containing a code will be sent to them. This functionality uses AWS Amplify to add them to the user list as an "Unconfirmed" user. 
+
+ConfirmationPage.js asks the users to input their username and the confirmation code they received in an email. If the code is correct AWS Amplify updates the user to "Confirmed". Users will then be redirected to the Sign In page.
+
 SelectionScreen.js contains buttons leading to all offered breathing exercises. Only one is currently available.
 
-breathingExercise1.js walks the user through a basic 4-7-8 breathing exercise once the Begin button has been pressed.
+BreathingExercise1.js walks the user through a basic 4-7-8 breathing exercise once the Begin button has been pressed.
+
+BreathingExercise2.js walks the user through a box breathing exercise once the Begin button has been pressed (not yet functional).
+
+## AWS Amplify 
+This project uses AWS Amplify for all backend and authentication functions. In order to use Amplify in conjunction with React Native and Expo, follow the instructions at:
+
+https://docs.amplify.aws/lib/auth/getting-started/q/platform/react-native/
 
 ## Contributing
 
@@ -35,3 +48,9 @@ https://reactnative.dev/docs/button
 https://reactnative.dev/docs/imagebackground
 
 https://www.verywellmind.com/abdominal-breathing-2584115
+
+https://docs.amplify.aws/start/getting-started/auth/q/integration/react-native/
+
+https://code.tutsplus.com/common-react-native-app-layouts-login-page--cms-27639t
+
+https://docs.amplify.aws/lib/auth/emailpassword/q/platform/react-native/#add-the-sign-up-sign-in-and-sign-out-capabilities
